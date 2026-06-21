@@ -24,14 +24,6 @@ stock_predictor/
 └── README.md
 ```
 
-## Deploy to Streamlit Cloud (free)
-
-1. Push this folder to a public GitHub repository
-2. Go to https://share.streamlit.io and sign in
-3. Click "New app" → select your repo → set `app.py` as the main file
-4. Click "Deploy" — Streamlit Cloud installs requirements.txt automatically
-
-The app will be live at `https://<your-app>.streamlit.app` within a minute.
 
 ## Run Locally
 
