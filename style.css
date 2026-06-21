@@ -1,0 +1,127 @@
+/* Global */
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Hide Streamlit default header branding */
+#MainMenu { visibility: hidden; }
+footer { visibility: hidden; }
+header { visibility: hidden; }
+
+/* Main container padding */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+/* Metric cards */
+[data-testid="metric-container"] {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+}
+
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+[data-testid="metric-container"] [data-testid="stMetricLabel"] {
+    font-size: 0.8rem;
+    color: #64748b;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: #0f172a;
+}
+
+[data-testid="stSidebar"] * {
+    color: #e2e8f0 !important;
+}
+
+[data-testid="stSidebar"] .stButton > button {
+    background: #3b82f6;
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    transition: background 0.2s;
+}
+
+[data-testid="stSidebar"] .stButton > button:hover {
+    background: #2563eb;
+}
+
+[data-testid="stSidebar"] .stSlider [data-testid="stThumbValue"] {
+    color: #60a5fa !important;
+}
+
+[data-testid="stSidebar"] hr {
+    border-color: #334155;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 4px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-weight: 500;
+    color: #64748b;
+}
+
+.stTabs [aria-selected="true"] {
+    background: white;
+    color: #1e293b !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"] {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Page title */
+h1 {
+    color: #0f172a;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h2, h3 {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* Info / alert boxes */
+[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+/* Download button */
+.stDownloadButton > button {
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+    color: #3b82f6;
+}
+
+/* Progress bar */
+[data-testid="stProgress"] > div > div {
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
